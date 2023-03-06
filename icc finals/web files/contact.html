@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/pics/favicon.png">
+    <title>Contact Us</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style5.css" rel="stylesheet" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body style="background-color:rgb(204, 173, 202);">
+    <header>
+        <h2 class="logo">WANDER</h2>
+        <ul  class="button">
+            <li><a href="/web files/index.html">Home</a></li>
+            <li><a href="/web files/about.html">About</a></li>
+            <li><a href="/web files/galleria.html">Galleria</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+        </ul>
+    </header>
+
+    <div class="main">
+
+        <video class="video-bg2" autoplay muted loop>
+            <source src="/bg/bgvid.mp4" type="video/mp4">
+        </video>
+
+        <form class="forms-container">
+            <label for="first-name">First name</label>
+            <input type="text" id="firstname" placeholder="Enter first name here..." required>
+
+            <label for="last-name">Last name</label>
+            <input type="text" id="lastname"  placeholder="Enter last name here..." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="wander@gmail.com" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone"  placeholder="0921-***-****" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter message here..." required></textarea>
+            
+            <input type="submit" value="submit" id="sendbtn">
+            
+        </form>
+
+        <div class="forms-text">
+            <h1>How Can We Help?</h1>
+            <p>Let us know your concerns. Fill up our forms with your<br>
+                contact information and message. The following are<br>
+            examples of common concerns from our customers:</p>
+            <div class="concerns">
+                <ul>
+                    <li>Product shipping issues</li>
+                    <li>Partnership concerns</li>
+                    <li>3d printing order duration</li>
+                    <li>Item quality concerns</li>
+                    <li>General issues</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="loc">
+        <h1>Visit Us</h1>
+        <div class="loc-text">
+            <p>54 Hester St, New York, NY 10002, USA<br>
+                Wander: Entomology<br>
+                @WanderHQ<br>
+                @WanderEntomology<br>
+                wander.entomology@concernsmail.com<br>
+                (124) 511-0319
+            </p>
+        </div>
+        <div class="socials1">
+            <img src="/pics/logos/pin.png">
+            <a href="https://www.facebook.com/mixee.vynx.1"><img src="/pics/logos/facebook.png"></a>
+            <a href="https://www.instagram.com/vynxshieee/"><img src="/pics/logos/instagram.png"></a>
+            <a href="https://twitter.com/mixeevynx"><img src="/pics/logos/twitter.png"></a>
+            <img src="/pics/logos/email.png">
+            <img src="/pics/logos/phone.png">
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1226.3891882931043!2d-73.99092262330099!3d40.71607715410509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a29c4077bf5%3A0x14aa4a629dddbb22!2s54%20Hester%20St%2C%20New%20York%2C%20NY%2010002%2C%20USA!5e0!3m2!1sen!2sph!4v1671813132516!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!--pop-up, submit-->
+    <div class="popup">
+        <img src="/pics/sent.png">
+        <h1 id="popup_title">Message Sent</h1>
+        <h3 id="popup_thankyou">Thank you for your feedback, Michelle!</h3>
+        <p id="popup_message">This contact form was sent to the Wander Admin.<br>
+            We value our Wanderers' concerns so we<br>
+            ensure our client support team will<br>
+            respond to your matters immediately.</p>
+
+        <i class='bx bx-exit'></i>
+    </div>
+
+    <div class="dimmer">
+        <p></p>
+    </div>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        document.querySelector('video').playbackRate = 3;
+
+        //pop-up
+        
+        let popup_thankyou = document.querySelector("#popup_thankyou");
+        let popup = document.querySelector(".popup");
+        let dimmer = document.querySelector(".dimmer");
+        let exit = document.querySelector(".bx-exit");
+
+        document.getElementById("sendbtn").onclick = function(){
+            document.getElementById("popup_thankyou").innerHTML = "Thank you for your feedback, " + document.getElementById("firstname").value + "!";
+            popup.classList.add("open");
+            dimmer.classList.add("open");
+            
+            return false;
+        }
+
+        exit.onclick = () =>{
+            popup.classList.remove("open");
+            dimmer.classList.remove("open");
+
+            firstname.value = '';
+            lastname.value = '';
+            email.value = '';
+            phone.value = '';
+            message.value = '';
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/pics/favicon.png">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style4.css" rel="stylesheet" type="text/css">
+    <link href="style9.css" rel="stylesheet" type="text/css">
+    
+    <title>Receipt</title>
+    
+</head>
+<body>
+    <div class="main">
+
+        <video class="video-bg2" autoplay muted loop>
+            <source src="/bg/bgvid.mp4" type="video/mp4">
+        </video>
+        <div class="receipt">
+            <h1>Wander Pickup</h1>
+            <hr>
+            <table id="orderDetails">
+                <tr>
+                  <td class="table_label">Order ID:</td>
+                  <td class="table_info">M0511T0319B</td>
+                </tr>
+                <tr>
+                  <td class="table_label">Order Received:</td>
+                  <td class="table_info">January 10, 2023</td>
+                </tr>
+                <tr>
+                  <td class="table_label">Estimated Delivery:</td>
+                  <td class="table_info">January 17, 2023</td>
+                </tr>
+                <tr>
+                    <td class="table_label">Name:</td>
+                    <td class="table_info" id="name"></td>
+                </tr>
+                <tr>
+                    <td class="table_label" >Email:</td>
+                    <td class="table_info" id="email"></td>
+                </tr> 
+                <tr>
+                    <td class="table_label">Phone:</td>
+                    <td class="table_info" id="phone"></td>
+                </tr>
+                <tr>
+                    <td class="table_label">Address:</td>
+                    <td class="table_info" id="address"></td>
+                </tr>
+                <tr>
+                    <td class="table_label">Mode of Payment:</td>
+                    <td class="table_info" id="mode"></td>
+                </tr>
+                <tr>
+                    <td class="table_label">Total w/ ($10) Shipping Fee:</td>
+                    <td class="table_info" id="total"></td>
+                </tr>
+            </table>
+
+            <div class="driver">
+                <img src="/pics/person.png" id="driver_pic">
+                <div id="driver_details">
+                    <h2>Brian T. Elle</h2>
+                    <h4>AGS International Movers</h4>
+                    <h6>DRIVER ID: ILAB0124YSMBY</h6>
+
+                    <h5>| Track your order here! |</h5>
+                </div>
+            </div>
+        </div>
+
+        <div id="thanku">
+            <img src="/pics/receipt_thanku.png">
+
+            <a href="/web files/galleria.html"><div class="btn-shop" id="shopmore">
+                <p>Shop more —></p>
+            </div></a>
+        </div>
+    </div>
+
+    <script src="/web files/receipt.js"></script>
+</body>
+</html>
