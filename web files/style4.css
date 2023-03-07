@@ -1,0 +1,186 @@
+.main{
+    position: absolute;
+    justify-content: center;
+    width: 1536px;
+    height: 713px;
+    overflow: hidden;
+    display: flex;
+}
+
+.video-bg2{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    z-index: -1000;
+    transform: translate(-50%, -50%);
+    height: 2000px;
+    width: 100%;
+}
+
+.behold{
+
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    top: 25%;
+    left: 32%;
+    width: 35%;
+    height: 13%;
+    cursor: pointer;
+
+}
+
+.buy{
+
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 47%;
+    left: 32%;
+    width: 35%;
+    height: 13%;
+    cursor: pointer;
+
+
+}
+
+.bewilder{
+
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 69%;
+    left: 32%;
+    width: 35%;
+    height: 13%;
+    cursor: pointer;
+
+}
+
+.buy h1, .bewilder h1,
+.behold h1{
+    
+    font-family: 'Unbounded', cursive;
+    font-weight: 600;
+    font-size: 63px;
+    color: aliceblue;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.749);
+    border-style: solid;
+    transition: ease-out 0.6s;
+}
+
+.buy h1:hover, .bewilder h1:hover,
+.behold h1:hover{
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.647);
+    transform: scale(1.1);
+    transition: ease-out 0.6s;
+}   
+
+.behold-left{
+    position: absolute;
+    top: -30%;
+    left: -77%;
+    height: 500px;
+    width: 300px;
+    transition: ease-out 0.6s;
+
+    z-index: -1;
+}
+
+.behold-right{
+
+
+    position: absolute;
+    top: -30%;
+    left: 115%;
+    height: 500px;
+    width: 335px;
+    transition: ease-out 0.6s;
+
+    z-index: -1;
+
+
+}
+
+.buy-left{
+    position: absolute;
+    top: -175%;
+    left: -77%;
+    height: 460px;
+    width: 330px;
+    transition: ease-out 0.6s;
+
+    z-index: -2;
+}
+
+.buy-right{
+
+    position: absolute;
+    top: -175%;
+    left: 120%;
+    height: 460px;
+    width: 330px;
+    transition: ease-out 0.6s;
+
+    z-index: -2;
+}
+
+.bewilder-left{
+
+    position: absolute;
+    top: -372%;
+    left: -80%;
+    height: 480px;
+    width: 340px;
+    transition: ease-out 0.6s;
+
+    z-index: -2;
+}
+
+.bewilder-right{
+
+    position: absolute;
+    top: -372%;
+    left: 120%;
+    height: 480px;
+    width: 330px;
+    transition: ease-out 0.6s;
+
+    z-index: -2;
+}
+
+
+.behold-right img,
+.behold-left img,
+.buy-left img,
+.buy-right img,
+.bewilder-left img,
+.bewilder-right img{
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height:100%;
+    width: 100%;
+    transition: ease-out 0.6s;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.behold:hover .behold-left img,
+.behold:hover .behold-right img,
+.buy:hover .buy-right img,
+.buy:hover .buy-left img,
+.bewilder:hover .bewilder-left img,
+.bewilder:hover .bewilder-right img{
+    opacity: 1;
+    transition: ease-out 1s;
+    z-index: -1;
+}
