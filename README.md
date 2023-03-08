@@ -5,8 +5,10 @@ Note:
 
 -With zero experience, you can see that my files are quite messy.
 
--The CSS files are also not clean/simplified since I was only experimenting with how they all work lmao
+-The CSS files are also not clean/simplified since I was only experimenting with how they all work lmao, that's why there are so many files of it.
 
 -My Galleria page is inspired by a YT vid's code I just forked.
 
--Pardon me for my dumb beginner's project, I'll improve astronomically the next time I attempt to start a new web dev project.
+-Pardon me for my dumb beginner's project, I'll improve the next time I attempt to start a new web dev project.
+
+-Some images and videos are too large so it takes too long to load on the deployed github page
