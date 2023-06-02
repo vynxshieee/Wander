@@ -12,3 +12,5 @@ Note:
 -Pardon me for my dumb beginner's project, I'll improve the next time I attempt to start a new web dev project.
 
 -Some images and videos are too large so it takes too long to load on the deployed github page
+
+-I took away some files that's why the hyperlinks to other pages aren't working. Will fix it next time ig :p 
